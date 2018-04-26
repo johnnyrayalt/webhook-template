@@ -1,5 +1,5 @@
 {
-  "name": "template-webpack",
+  "name": "project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,7 @@
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
+    "lint-fix": "eslint src/*.js --fix",
     "test": "karma start karma.conf.js"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
     "babel-preset-es2015": "^6.24.1",
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.10",
+    "dotenv-webpack": "^1.5.5",
     "eslint": "^4.18.2",
     "eslint-loader": "^2.0.0",
     "html-webpack-plugin": "^3.0.6",
@@ -38,7 +40,8 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.0",
-    "jquery": "^3.2.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
   }
 }
